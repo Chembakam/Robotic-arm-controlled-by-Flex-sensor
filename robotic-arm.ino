@@ -29,8 +29,7 @@ void setup()
 {
  
  
-
-  myservo1.attach(8);
+ myservo1.attach(8);
  
  myservo2.attach(9);
  
@@ -68,15 +67,13 @@ Serial.print("  ");
 //Action
 
 
-  val1 = map (sensorValue1, 552, 270, 0, 180);         //mapped values from flexsensor1
+ val1 = map (sensorValue1, 552, 270, 0, 180);         //mapped values from flexsensor1
 
  myservo1.write(val1);
    
  delay(50);
   
- 
-
- 
+  
  val2 = map (sensorValue2, 477, 710, 0 , 180);                //mapped values from flexsensor2
 
   myservo2.write(val2);
@@ -85,5 +82,6 @@ Serial.print("  ");
 
 val3 = map (val3, 237, 340, 0 , 180);     //mapped values from flexsensor3
 
-delay(50);}
+delay(50);
+}
 
